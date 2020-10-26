@@ -1,0 +1,30 @@
+.card {
+  min-width: 10rem;
+  min-height: 11rem;
+  margin: 0 1rem 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 4px;
+
+  .card--open {
+    height: 100%;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1);
+  }
+
+  .card--closed {
+    height: 100%;
+    border-radius: 4px;
+    background-color: #f89999;
+    z-index: 10;
+  }
+}
+
+.none {
+  transform: scale(0);
+}
